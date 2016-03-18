@@ -1,0 +1,28 @@
+create database assn3;
+use assn3;
+
+create table students
+(snum int (10), sname varchar (30), major varchar (20),
+levels varchar(3), age int (2), primary key (snum));
+
+create table class
+(cname varchar (20), meets_at time (5), room varchar (5), fid int (5));
+
+create table enrolled
+(snum int (10), cname varchar (20));
+
+create table faculty
+(fid varchar (10), deptid varchar (5), fname char (20));
+
+show tables;
+
+insert into students values (123, "sakshi", "biotech", "jr", 18);
+insert into students values (234, "vidisha", "history", "sr", 19);
+
+insert into class values ("biology", 08-30, "R128", 098);
+insert into class values ("english", 09-30, "R125", 095);
+
+insert into enrolled values (78, "biology");
+insert into enrolled values (75, "english");
+
+insert into faculty values (

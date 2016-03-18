@@ -1,0 +1,13 @@
+create database SocialNetwork;
+use SocialNetwork; 
+
+create table Student
+(ID int (10), sname char (20), grade varchar (2));
+
+create table Friend
+(ID1 int (10), ID2 int (10));
+
+create table Likes
+(ID1 int (10), ID2 int (10));
+
+show tables in SocialNetwork;

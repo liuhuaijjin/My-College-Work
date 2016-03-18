@@ -1,0 +1,22 @@
+create database student;
+
+create table gradstudent
+(rollno int (10), sname varchar (100), age int (2), program int (20));
+
+create table project
+(pno int (10), sponsorname char (20), startdate date,
+enddate date, budget int (12));
+
+create table professor
+(ssn varchar (12), sname char (20),
+age int (10), area char (20));
+
+create table department
+(deptno int (10), dname char (20), address varchar (30));
+
+create table manages
+(ssn varchar (12), since date, pno int (10));
+
+create table works_on
+(pno int (10), ssn varchar (12), rollno int (10));
+
